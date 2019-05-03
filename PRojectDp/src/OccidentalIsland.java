@@ -11,13 +11,13 @@ public class OccidentalIsland extends AbstractIslandFactory {
 	Tree getTree(String type) {
 		// TODO Auto-generated method stub
 		if(type.equalsIgnoreCase("Flora")) {
-			System.out.println("Environment"
+			System.out.println("Environment : "
 					+ "Occidental");
 			return new Flora();
 		}
 			
 		else if(type.equalsIgnoreCase("Foana")){
-			System.out.println("Environment"
+			System.out.println("Environment : "
 					+ "Occidental");
 			return new Foana();
 		}
@@ -27,11 +27,11 @@ public class OccidentalIsland extends AbstractIslandFactory {
 	
 
 	@Override
-	void getHut() {
+	void getHut(int hutNumber ) {
 		// TODO Auto-generated method stub
 		//System.out.println("this hut is for Occidental Environment");
 		OccidentalHut  ocHut = new OccidentalHut();
-		for(int i = 0;i <3 ;i ++) {
+		for(int i = 0;i <hutNumber ;i ++) {
 			HutFactory.getHut(ocHut);
 			System.out.println("Occidental Hut created by FlyWeight");
 		}

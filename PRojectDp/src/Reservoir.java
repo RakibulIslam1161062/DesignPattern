@@ -12,7 +12,7 @@ public class Reservoir {
 	}
 	
 	public boolean levelCheck(int level) {
-		if(level <= safeLevel ) return true;
+		if(level >= safeLevel ) return true;
 		else {
 			return false;
 		}

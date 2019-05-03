@@ -8,7 +8,7 @@ public class City extends AbstractIslandFactory {
 	}
 
 	@Override
-	void getHut() {
+	void getHut(int hutNumber) {
 		// TODO Auto-generated method stub
 		
 	}
