@@ -1,5 +1,5 @@
 
-public class Radio implements Partner{
+public class Radio extends Partner{
 
 	@Override
 	public String  makePartner() {

@@ -2,8 +2,9 @@
 public class Festival {
 	public static void main(String [] args) {
 		
-		
-		Fest itFest = new DeptFest(new Btv(), new IIT() );
+		Partner tv = new Btv();
+		Department iit = new IIT(tv);
+		Fest itFest = new DeptFest(new Btv(), iit );
 		
 		itFest.makeSuccessfulFest();
 		
@@ -11,7 +12,18 @@ public class Festival {
 		tsc.getAvailableDates();
 		tsc.bookTsc(22);
 		tsc.getAvailableDates();
-		Tsc tsc2 = Tsc.getInstance();
-		tsc2.getAvailableDates();
+		
+		
+		//Partner tv = new Btv();
+		
+		
+		Department iit2 = new IIT(tv);
+		Department cse = new Cse(tv);
+		
+		
+		
+		//iit.broadcast(iit, iit2);
+		tv.broadcast("Register Now,From BTV");
+		
 	}
 }

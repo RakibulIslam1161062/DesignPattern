@@ -1,5 +1,5 @@
 
-public class Btv implements Partner {
+public class Btv extends Partner {
 
 	@Override
 	public String  makePartner() {

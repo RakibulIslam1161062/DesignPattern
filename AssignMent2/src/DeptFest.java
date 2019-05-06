@@ -14,5 +14,7 @@ public class DeptFest extends Fest {
 		System.out.println(department.deptName()+" department is making Fest "+partner.makePartner());
 		
 	}
+	
+	
 
 }
